@@ -1,0 +1,230 @@
+%-------------------------
+% Resume in Latex
+% Author : Abderrahim OUAKKI
+% License : MIT
+%------------------------
+
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{graphicx}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[labelformat=empty]{caption}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{0.8in}
+\addtolength{\topmargin}{- .6in}
+
+
+\addtolength{\textheight}{142in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+
+
+ \renewcommand{\familydefault}{\sfdefault}
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemL}[1]{
+  \item\small{{#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeIDesc}[1]{
+\vspace{2pt}
+  \small{#1}
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{table}
+            \footnotesize
+                  \begin{tabular}{l}
+   3 Rue château d'eau ,  \\
+   étage 1 studio 2                     \\
+   1800 Bourges-France                  \\
+
+    \end{tabular}
+                \hfill
+                   \begin{tabular}{l}
+                    \\
+                    {\fontfamily{cmr}\selectfont
+ \textbf { \large{ABDERRAHIM OUAKKI}}}
+                
+    \end{tabular}
+                \hfill\hfill
+                  \begin{tabular}{l}
+                      (+33) 758 74 85 03               \\
+    abderrahim.ouakki@insa-cvl.fr             \\
+    Github : aouakki\\
+                  
+
+    \end{tabular}
+                
+\end{table}
+
+\begin{center} \small
+Étudiant en 5ème année à L'INSA Centre Val de loire, à la recherche d'un stage de fin d'étude dans le domaine du Data Engineering
+\end{center}
+\begin{comment}
+ 
+%----------HEADING-----------------
+ \begin{table}
+            \footnotesize
+                  \begin{tabular}{l}
+    11, Rue du Pont Merlan  \\
+    Résidance Universitaire Hotel Dieu                      \\
+    18000 Bourges–France                  \\
+    (+33) 758-74 85 03               \\
+    abderrahim.ouakki@insa-cvl.fr             \\
+    Github: aouakki
+    \end{tabular}
+                \hfill
+                  {\fontfamily{cmr}\selectfont
+ \textbf { \large{ABDERRAHIM OUAKKI}} }
+                \hfill\hfill
+                  \begin{tabular}{l}
+               \includegraphics[width=8em]{me.jpg}
+                       
+    \end{tabular}
+\end{table}
+%\begin{center} \small
+%Étudiant en 4e année à L'INSA Centre Val de loire, recherche un stage de 4 mois autour des problématiques
+%liées au traitement des données massives ( Data Engineering )
+%\end{center}
+%--------------
+\end{comment}
+%-----------EDUCATION-----------------
+\section{Etudes}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {INSA Centre Val de loire  }{Bourges, France}
+      {Double diplôme - Filière: Sécurité et Technologies informatiques   . }{ 2017 -- Présent}
+    \resumeSubheading
+      {Institut National des Postes et Télécommunications }{Rabat, Maroc}
+      { Diplome ingénieur d'état - Filière: Ingénieurie logiciel. }{ 2014 -- 2017}
+    \resumeSubheading
+      {Classes Préparatoires aux Grandes Ecoles}{Laayoune, Maroc}
+      {Option : MPSI (Mathématiques, Physique et Sciences industrielles).}{ 2012 –  2014}
+  \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------------
+\section{Expériences Professionnelles}
+  \resumeSubHeadingListStart
+  
+   \resumeSubheading
+         {SenseWaves: }{Paris  }
+      { Data/Software engineer  }{Avril-Août 2018}
+       \resumeItemListStart
+       \resumeItemL
+        {Création d'un process ETL pour le nettoyage et l'indexation de TBs de données avec Apache Spark 2.2, Elasticsearch and Azure data lake }
+      \resumeItemL
+        {Deploiement d'une architecture Micro-service avec Docker. }
+      \resumeItemL
+       { Developement d'une API REST avec des models de ML pour la prédiction des séries temporelles : \textit{Flask,Pandas,SkLearn}}
+      \resumeItemListEnd
+  
+       \resumeSubheading
+      {xHub }{Casablanca,Maroc}
+      {Software Engineer Intern}{Eté 2016}
+      \resumeItemListStart
+        \resumeItemL
+          {Développement de la partie authentification et profile d'un réseau social dédié au
+soutien scolaire et destiné aux étudiants de l'université d'Ottawa au Canada :  \small{\textit{Java/Scala-Play Framework-AngularJS-Docker-MySQL}}.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {iCompetences }{Casablanca, Maroc}
+      {Developpeur Web}{Eté 2015}
+      \resumeItemListStart
+        \resumeItemL
+          {Modification et amélioration d'une application open source de gestion de projets (projeQtor):  \small{\textit{PHP-JS-HTML-AJAX,Postgresql}}.}
+          \resumeItemL
+          {Mise en place d'un système d’analytique pour les différentes instances de l’application.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%------------------- ------------- 
+\resumeSubHeadingListEnd
+%----------------- --------Projets ------------
+\section{Projets}
+  \resumeSubHeadingListStart
+  \resumeSubItem{ScrapAuto }{ Projet data mining pour la création d'une base de données des véhicules présents dur le territoire européen à partir de 3 sites et indexation dans Elasticsearch}: \textit{Python/Selenium/Elasticsearch}
+        \resumeSubItem{CMX analytics  }{ Implémentation d'une interface pour la localisation des clients connectés sur un réseau Meraki CMX de cisco } \small{\textit{PHP-JAVA-Google Maps API-JavaScript}}.}
+    \resumeSubItem{ WebServiAuto }{ Implémentation des parcers de fichier de configuration (.cong pour apache & Nginx), .ini ) pour une application de gestion des services de déploiement et ecriture des playBook Ansible :  \small{\textit{JavaScript/NodeJS}}}
+    
+  \resumeSubHeadingListEnd
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Languages de programmation }{Python, Java,PHP,JavaScript,Scala,C,Bash}
+    \resumeSubItem{Devops \& Administation système et résaux }{ Administration linux et connaissance de la pile TCP/IP avec ses multiples protocoles; Docker/docker-compose, Ansible , Jenkins ,Git , Gitlab, composer,npm,maven/svn, MySQL/PostgreSQL}
+    
+    \resumeSubItem{Software engineering}{ MVC, ORMs, Micro Services, REST APIs, SOAP, Design patterns }
+    
+    \resumeSubItem{Data engineering}{ Apache Spark 2, Elasticsarch , PySpark , Pandas  }
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\section{Langues }
+  \resumeSubHeadingListStart
+  \hfill
+    \resumeSubItem{Français}
+    {Bilingue}\hfill
+    \resumeSubItem{Anglais}
+    {Courant}\hfill
+     \resumeSubItem{Arabe}
+    { Langue maternelle }\hspace{1cm}\hfill 
+%-------------------------------------------
+\end{document}
